@@ -1,0 +1,29 @@
+import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "../../context/ThemeContext";
+import { HiSun, HiMoon } from "react-icons/hi";
+
+export function ThemeToggle() {
+  const { theme, toggle } = useTheme();
+  return (
+    <motion.button
+      onClick={toggle}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="relative w-10 h-10 rounded-lg glass flex items-center justify-center transition-colors"
+      style={{ color: "var(--text-secondary)" }}
+      aria-label="Toggle theme"
+    >
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={theme}
+          initial={{ rotate: -90, opacity: 0 }}
+          animate={{ rotate: 0, opacity: 1 }}
+          exit={{ rotate: 90, opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          {theme === "dark" ? <HiSun size={18} className="text-[var(--accent)]" /> : <HiMoon size={18} />}
+        </motion.div>
+      </AnimatePresence>
+    </motion.button>
+  );
+}
