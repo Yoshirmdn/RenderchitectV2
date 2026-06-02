@@ -29,7 +29,7 @@ const navConfig = [
       {
         group: "Seller",
         items: [
-          { path: "/sell",      label: "Sell on ArchVault", icon: <FiDollarSign size={15} />,  desc: "Jual desain, raih 70% komisi" },
+          { path: "/sell",      label: "Sell on Renderchitect", icon: <FiDollarSign size={15} />,  desc: "Jual desain, raih 70% komisi" },
         ],
       },
     ],
@@ -147,7 +147,7 @@ function MegaDropdown({ item, onClose }) {
       <div className="px-4 py-3 border-t flex items-center justify-between"
         style={{ borderColor: "var(--border)", background: "rgba(200,169,110,0.04)" }}>
         <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-          🏗️ ArchVault — Premium 3D Architecture Marketplace
+          🏗️ Renderchitect — Premium 3D Architecture Marketplace
         </span>
         <Link to="/projects" onClick={onClose}
           className="text-xs font-mono flex items-center gap-1 transition-colors"
@@ -311,7 +311,7 @@ export function Navbar() {
           </motion.div>
           <span className="font-display text-xl tracking-wider hidden sm:block"
             style={{ color: "var(--text-primary)" }}>
-            ARCHVAULT
+            RENDERCHITECH
           </span>
         </Link>
 

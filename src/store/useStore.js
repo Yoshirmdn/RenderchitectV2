@@ -18,5 +18,5 @@ export const useStore = create(persist(
     },
     isWishlisted: (id) => get().wishlist.some(i => i.id === id),
   }),
-  { name: "archvault-store" }
+  { name: "renderchitect-store" }
 ));

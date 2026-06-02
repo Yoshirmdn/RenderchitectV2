@@ -24,7 +24,7 @@ const posts = [
     id: 3, slug: "menghasilkan-uang-dari-desain-sketchup",
     category: "Seller Tips", readTime: "6 menit",
     title: "Cara Menghasilkan Rp 10 Juta/Bulan dari Jual Desain SketchUp",
-    excerpt: "Interview eksklusif dengan seller ArchVault terbaik — strategi listing, penetapan harga, dan membangun reputasi di marketplace.",
+    excerpt: "Interview eksklusif dengan seller Renderchitect terbaik — strategi listing, penetapan harga, dan membangun reputasi di marketplace.",
     img: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
     date: "10 Mei 2025", featured: false,
   },
@@ -48,7 +48,7 @@ const posts = [
     id: 6, slug: "tips-render-arsitektur-profesional",
     category: "Tutorial", readTime: "9 menit",
     title: "10 Tips Render Arsitektur yang Terlihat Profesional dan Menjual",
-    excerpt: "Dari pengaturan lighting HDRI, komposisi kamera, hingga post-processing di Photoshop — teknik render yang dipakai seller terlaris ArchVault.",
+    excerpt: "Dari pengaturan lighting HDRI, komposisi kamera, hingga post-processing di Photoshop — teknik render yang dipakai seller terlaris Renderchitect.",
     img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80",
     date: "25 April 2025", featured: false,
   },
@@ -75,7 +75,7 @@ export default function Blog() {
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-12">
           <p className="font-mono text-sm tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>Blog & Insights</p>
-          <h1 className="font-display text-6xl sm:text-7xl mb-3" style={{ color: "var(--text-primary)" }}>ARCHVAULT<br />BLOG</h1>
+          <h1 className="font-display text-6xl sm:text-7xl mb-3" style={{ color: "var(--text-primary)" }}>RENDERCHITECH<br />BLOG</h1>
           <p style={{ color: "var(--text-secondary)" }}>Tutorial, tren arsitektur, tips seller, dan dunia VR.</p>
         </motion.div>
 

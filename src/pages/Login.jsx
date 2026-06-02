@@ -32,7 +32,7 @@ export default function Login() {
             <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: "var(--accent)" }}>
               <span className="font-display text-sm" style={{ color: "#0a0a0a" }}>AV</span>
             </div>
-            <span className="font-display text-2xl tracking-wider" style={{ color: "var(--text-primary)" }}>ARCHVAULT</span>
+            <span className="font-display text-2xl tracking-wider" style={{ color: "var(--text-primary)" }}>RENDERCHITECH</span>
           </Link>
           <h2 className="font-heading text-xl font-bold mt-4 mb-1" style={{ color: "var(--text-primary)" }}>
             {isLogin ? "Welcome back" : "Create account"}

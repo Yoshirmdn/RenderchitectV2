@@ -259,7 +259,7 @@ export const testimonials = [
     role: "Principal Architect",
     company: "Studio RF",
     avatar: "https://api.dicebear.com/7.x/personas/svg?seed=reza",
-    text: "ArchVault has completely transformed how I source base models. The quality is consistently outstanding and saves me days of modeling time.",
+    text: "Renderchitect has completely transformed how I source base models. The quality is consistently outstanding and saves me days of modeling time.",
     rating: 5,
     project: "Casa Lumina",
   },

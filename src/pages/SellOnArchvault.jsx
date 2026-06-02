@@ -5,7 +5,7 @@ import { CTASection } from "../components/sections/CTASection";
 
 const steps = [
   { n: "01", icon: <FiUpload size={22} />, title: "Daftar Seller", desc: "Buat akun seller gratis. Isi profil studio/arsitek dan upload portofolio awal kamu." },
-  { n: "02", icon: <FiCheck size={22} />, title: "Review Tim", desc: "Tim ArchVault mereview kualitas desain dalam 2–3 hari kerja. Kami pastikan standar premium terpenuhi." },
+  { n: "02", icon: <FiCheck size={22} />, title: "Review Tim", desc: "Tim Renderchitect mereview kualitas desain dalam 2–3 hari kerja. Kami pastikan standar premium terpenuhi." },
   { n: "03", icon: <FiUpload size={22} />, title: "Upload Desain", desc: "Upload file SKP, GLB/GLTF, gambar render, dan deskripsi produk. Harga kamu tentukan sendiri." },
   { n: "04", icon: <FiDollarSign size={22} />, title: "Mulai Jual & Terima Bayaran", desc: "Desain kamu langsung live di marketplace. Komisi 70% masuk rekening kamu setiap bulan." },
 ];
@@ -47,7 +47,7 @@ const faqs = [
   { q: "Format file apa yang diterima?", a: "SKP (SketchUp), GLB/GLTF, OBJ, FBX, DWG, PDF. Wajib menyertakan minimal satu format 3D dan satu gambar render berkualitas tinggi." },
   { q: "Berapa lama proses review?", a: "Starter: 2–3 hari kerja. Pro Seller: 1 hari kerja. Kami cek kualitas geometri, UV mapping, kelengkapan file, dan akurasi deskripsi." },
   { q: "Bagaimana sistem payout?", a: "Transfer bank lokal (BCA, Mandiri, BRI, BNI) atau PayPal. Minimum payout Rp 200.000. Jadwal sesuai plan yang dipilih." },
-  { q: "Bisakah saya jual desain yang sama di platform lain?", a: "Bisa. ArchVault tidak mengunci eksklusivitas. Namun desain eksklusif ArchVault mendapat placement lebih baik di search." },
+  { q: "Bisakah saya jual desain yang sama di platform lain?", a: "Bisa. Renderchitect tidak mengunci eksklusivitas. Namun desain eksklusif Renderchitect mendapat placement lebih baik di search." },
   { q: "Apa yang terjadi jika ada pembeli komplain?", a: "Kami mediasi antara pembeli dan seller. Refund hanya diberikan jika file terbukti berbeda dengan deskripsi. Seller tidak perlu khawatir komplain tidak berdasar." },
 ];
 
@@ -154,7 +154,7 @@ export default function SellOnArchvault() {
         <div className="max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
             <p className="font-mono text-sm tracking-widest uppercase mb-3" style={{ color: "var(--accent)" }}>Keuntungan Seller</p>
-            <h2 className="font-display text-5xl sm:text-6xl" style={{ color: "var(--text-primary)" }}>KENAPA ARCHVAULT?</h2>
+            <h2 className="font-display text-5xl sm:text-6xl" style={{ color: "var(--text-primary)" }}>KENAPA RENDERCHITEC?</h2>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {benefits.map((b, i) => (

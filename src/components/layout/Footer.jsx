@@ -10,7 +10,7 @@ const links = {
   ],
   Company: [
     { label: "About Us", to: "/about" },
-    { label: "Sell on ArchVault", to: "/sell" },
+    { label: "Sell on Renderchitect", to: "/sell" },
     { label: "Blog", to: "/blog" },
     { label: "Careers", to: "/careers" },
   ],
@@ -33,7 +33,7 @@ export function Footer() {
               <div className="w-8 h-8 rounded-lg bg-[var(--accent)] flex items-center justify-center">
                 <span className="font-display text-xs" style={{ color: "#0a0a0a" }}>AV</span>
               </div>
-              <span className="font-display text-xl tracking-wider" style={{ color: "var(--text-primary)" }}>ARCHVAULT</span>
+              <span className="font-display text-xl tracking-wider" style={{ color: "var(--text-primary)" }}>RENDERCHITECH</span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs mb-6" style={{ color: "var(--text-secondary)" }}>
               The premier marketplace for professional 3D architecture and interior design assets. Built for architects, designers, and developers.
@@ -67,7 +67,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderColor: "var(--border)" }}>
           <p className="text-xs" style={{ color: "var(--text-muted)" }}>
-            © {new Date().getFullYear()} ArchVault. All rights reserved.
+            © {new Date().getFullYear()} Renderchitect. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(item => (

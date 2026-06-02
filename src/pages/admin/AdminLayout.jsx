@@ -3,7 +3,7 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FiGrid, FiPackage, FiShoppingBag, FiUsers,
-  FiStar, FiSettings, FiLogOut,
+  FiStar, FiSettings, FiLogOut, FiMenu, FiX,
   FiBell, FiChevronRight
 } from "react-icons/fi";
 import { MdOutlineVrpano } from "react-icons/md";

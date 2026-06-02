@@ -10,7 +10,7 @@ const openings = [
   },
   {
     id: 2, title: "Frontend Developer (React)", type: "Full-time", location: "Remote",
-    dept: "Engineering", desc: "Mengembangkan fitur-fitur baru marketplace ArchVault — dari UI komponen hingga 3D viewer berbasis React Three Fiber.",
+    dept: "Engineering", desc: "Mengembangkan fitur-fitur baru marketplace Renderchitect — dari UI komponen hingga 3D viewer berbasis React Three Fiber.",
     requirements: ["Pengalaman React 18+", "Familiar TypeScript", "Memahami Three.js / WebGL jadi nilai plus", "Perhatian terhadap performa"],
   },
   {
@@ -20,7 +20,7 @@ const openings = [
   },
   {
     id: 4, title: "Content & Community Manager", type: "Full-time", location: "Jakarta",
-    dept: "Marketing", desc: "Mengelola konten blog, sosial media, dan komunitas seller ArchVault. Menjadi jembatan antara platform dan kreator.",
+    dept: "Marketing", desc: "Mengelola konten blog, sosial media, dan komunitas seller Renderchitect. Menjadi jembatan antara platform dan kreator.",
     requirements: ["Pengalaman content creation", "Memahami dunia arsitektur/desain interior", "Kemampuan menulis Bahasa Indonesia & Inggris", "Familiar platform komunitas online"],
   },
 ];
@@ -56,7 +56,7 @@ export default function Careers() {
 
         {/* Perks */}
         <section className="mb-16">
-          <h2 className="font-heading font-bold text-2xl mb-6" style={{ color: "var(--text-primary)" }}>Mengapa ArchVault?</h2>
+          <h2 className="font-heading font-bold text-2xl mb-6" style={{ color: "var(--text-primary)" }}>Mengapa Renderchitect?</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {perks.map((perk, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}

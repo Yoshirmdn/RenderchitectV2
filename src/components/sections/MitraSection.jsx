@@ -94,7 +94,7 @@ const featuredMitra = [
     badge: "✦ Official Partner",
     subtitle: "Konsultan & Studio Arsitektur",
     description:
-      "Koloni Tri Arsitama adalah studio arsitektur yang berfokus pada desain hunian modern, komersial, dan kawasan. Bermitra dengan ArchVault untuk menghadirkan pengalaman visualisasi 3D dan VR berkualitas tinggi bagi klien mereka.",
+      "Koloni Tri Arsitama adalah studio arsitektur yang berfokus pada desain hunian modern, komersial, dan kawasan. Bermitra dengan Renderchitect untuk menghadirkan pengalaman visualisasi 3D dan VR berkualitas tinggi bagi klien mereka.",
     tags: ["Desain Arsitektur", "Konsultasi", "VR Visualization", "3D Rendering"],
     website: "#",
     accentFrom: "rgba(200,169,110,0.09)",
@@ -369,7 +369,7 @@ export function MitraSection() {
           className="text-center text-xs mt-8 font-mono"
           style={{ color: "var(--text-muted)" }}
         >
-          Tertarik bermitra dengan ArchVault?{" "}
+          Tertarik bermitra dengan Renderchitect?{" "}
           <a
             href="/contact"
             className="underline underline-offset-2 transition-colors"

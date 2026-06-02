@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const sections = [
   {
     title: "1. Kebijakan Umum",
-    content: `ArchVault menjual produk digital berupa file desain arsitektur 3D (SKP, GLB, GLTF, DWG, PDF, dan format lainnya). Karena sifat produk yang digital dan dapat diunduh, refund hanya dapat diproses dalam kondisi tertentu yang diuraikan di bawah ini.
+    content: `Renderchitect menjual produk digital berupa file desain arsitektur 3D (SKP, GLB, GLTF, DWG, PDF, dan format lainnya). Karena sifat produk yang digital dan dapat diunduh, refund hanya dapat diproses dalam kondisi tertentu yang diuraikan di bawah ini.
 
-Dengan melakukan pembelian di ArchVault, pembeli dianggap telah membaca, memahami, dan menyetujui kebijakan ini.`,
+Dengan melakukan pembelian di Renderchitect, pembeli dianggap telah membaca, memahami, dan menyetujui kebijakan ini.`,
   },
   {
     title: "2. Kondisi yang Memenuhi Syarat Refund",
@@ -36,7 +36,7 @@ Pengajuan refund wajib disertai bukti (screenshot error, perbandingan file, atau
 1. Hubungi tim support melalui halaman Contact dalam 24 jam sejak tanggal pembelian.
 2. Sertakan Order ID (format: AV-XXXXXXXX) yang dapat ditemukan di halaman Check Order.
 3. Jelaskan alasan pengajuan refund secara detail beserta bukti pendukung.
-4. Tim ArchVault akan merespons dalam 1×24 jam kerja.
+4. Tim Renderchitect akan merespons dalam 1×24 jam kerja.
 5. Jika refund disetujui, dana dikembalikan ke metode pembayaran asal dalam 3–7 hari kerja.`,
   },
   {
@@ -46,7 +46,7 @@ Pengajuan refund wajib disertai bukti (screenshot error, perbandingan file, atau
 - Sebelum pengerjaan dimulai: refund penuh (100%).
 - Setelah pengerjaan dimulai (progres 1–50%): refund 50%.
 - Setelah pengerjaan >50% selesai: tidak ada refund, namun kami wajib menyelesaikan deliverable sesuai scope.
-- Jika ada keterlambatan signifikan dari pihak ArchVault (>2× estimasi deadline): refund penuh.`,
+- Jika ada keterlambatan signifikan dari pihak Renderchitect (>2× estimasi deadline): refund penuh.`,
   },
   {
     title: "6. Sewa & Pembelian Perangkat Oculus",
@@ -56,13 +56,13 @@ Pengajuan refund wajib disertai bukti (screenshot error, perbandingan file, atau
   },
   {
     title: "7. Penyelesaian Sengketa",
-    content: `Jika ada perselisihan antara pembeli dan seller, ArchVault bertindak sebagai mediator netral. Keputusan final dari tim ArchVault bersifat mengikat sesuai Terms of Service yang berlaku.
+    content: `Jika ada perselisihan antara pembeli dan seller, Renderchitect bertindak sebagai mediator netral. Keputusan final dari tim Renderchitect bersifat mengikat sesuai Terms of Service yang berlaku.
 
 Untuk sengketa yang tidak dapat diselesaikan secara internal, para pihak setuju untuk menyelesaikan melalui jalur hukum yang berlaku di Republik Indonesia.`,
   },
   {
     title: "8. Perubahan Kebijakan",
-    content: `ArchVault berhak mengubah kebijakan refund ini sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini dan email ke pengguna terdaftar. Pembelian yang dilakukan sebelum tanggal perubahan tetap mengikuti kebijakan yang berlaku saat transaksi.
+    content: `Renderchitect berhak mengubah kebijakan refund ini sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini dan email ke pengguna terdaftar. Pembelian yang dilakukan sebelum tanggal perubahan tetap mengikuti kebijakan yang berlaku saat transaksi.
 
 Kebijakan ini terakhir diperbarui pada: 30 Mei 2025.`,
   },

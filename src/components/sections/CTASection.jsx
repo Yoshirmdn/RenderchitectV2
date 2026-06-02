@@ -22,7 +22,7 @@ export function CTASection() {
               YOUR DESIGN<br />MARKETPLACE AWAITS
             </h2>
             <p className="text-base max-w-lg mx-auto mb-10" style={{ color: "rgba(255,255,255,0.6)" }}>
-              Join 18,000+ architects, designers, and property developers who trust ArchVault for premium 3D designs.
+              Join 18,000+ architects, designers, and property developers who trust Renderchitect for premium 3D designs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/projects"

@@ -33,9 +33,9 @@ export default function Contact() {
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2 space-y-6">
             {[
-              { icon: FiMail, label: "Email", value: "hello@archvault.id" },
-              { icon: FiPhone, label: "Phone", value: "+62 812 3456 7890" },
-              { icon: FiMapPin, label: "Office", value: "Jl. Sudirman No.1, Jakarta" },
+              { icon: FiMail, label: "Email", value: "mrec.telu@gmail.com" },
+              { icon: FiPhone, label: "Phone", value: "+62 811-1434-331" },
+              { icon: FiMapPin, label: "Office", value: "GSG, Jl. Telekomunikasi No.1 Lt. 2, Sukapura, Dayeuhkolot, Bandung Regency, West Java 40257" },
             ].map(({ icon: Icon, label, value }, i) => (
               <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.1 }}
                 className="glass rounded-xl p-5 flex items-start gap-4" style={{ border: "1px solid var(--border)" }}>

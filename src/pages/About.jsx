@@ -28,7 +28,7 @@ export default function About() {
             BUILT FOR<br /><span className="text-gradient">ARCHITECTS</span>
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
-            ArchVault was born from a simple frustration: finding high-quality, ready-to-use 3D architecture models shouldn't take hours. We built a marketplace where quality is guaranteed and every purchase saves you days of work.
+            Renderchitect was born from a simple frustration: finding high-quality, ready-to-use 3D architecture models shouldn't take hours. We built a marketplace where quality is guaranteed and every purchase saves you days of work.
           </p>
         </motion.div>
       </section>
