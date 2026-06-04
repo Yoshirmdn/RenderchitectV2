@@ -305,9 +305,13 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2.5 shrink-0">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="w-8 h-8 rounded-lg flex items-center justify-center"
-            style={{ background: "var(--accent)" }}>
-            <span className="font-display text-xs font-bold" style={{ color: "#0a0a0a" }}>AV</span>
+            className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center"
+          >
+            <img
+              src="/Logo.png"
+              alt="Logo"
+              className="w-full h-full object-contain"
+            />
           </motion.div>
           <span className="font-display text-xl tracking-wider hidden sm:block"
             style={{ color: "var(--text-primary)" }}>
