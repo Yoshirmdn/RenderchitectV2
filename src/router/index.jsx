@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "../components/layout/Layout";
 import { Loader } from "../components/ui/Loader";
+import { useAuth } from "../context/AuthContext";
+import { Navigate } from "react-router-dom";
 
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
@@ -56,10 +58,14 @@ const router = createBrowserRouter([
       { path: "refund", element: withSuspense(<RefundPolicy />) },
       { path: "*", element: withSuspense(<NotFound />) },
 
-      {
-        path: "/admin",
-        element: withSuspense(<AdminLayout />),
-        children: [
+{
+  path: "/admin",
+  element: (
+    <ProtectedRoute roles={["ADMIN"]}>
+      {withSuspense(<AdminLayout />)}
+    </ProtectedRoute>
+  ),
+  children: [
           { index: true,           element: withSuspense(<AdminDashboard />) },
           { path: "projects",      element: withSuspense(<AdminProjects />) },
           { path: "orders",        element: withSuspense(<AdminOrders />) },
@@ -71,9 +77,13 @@ const router = createBrowserRouter([
 
 
       {
-        path: "/user",
-        element: withSuspense(<UserLayout />),
-        children: [
+         path: "/user",
+  element: (
+    <ProtectedRoute roles={["BUYER", "SELLER", "ADMIN"]}>
+      {withSuspense(<UserLayout />)}
+    </ProtectedRoute>
+  ),
+  children: [
           { index: true,           element: withSuspense(<UserDashboard />) },
           { path: "orders",        element: withSuspense(<UserOrders />) },
           { path: "downloads",     element: withSuspense(<UserDownloads />) },
@@ -86,6 +96,14 @@ const router = createBrowserRouter([
   },
   { path: "/login", element: withSuspense(<Login />) },
 ]);
+
+function ProtectedRoute({ children, roles = [] }) {
+  const { user, isLoggedIn } = useAuth();
+  if (!isLoggedIn) return <Navigate to="/login" replace />;
+  if (roles.length > 0 && !roles.includes(user?.role))
+    return <Navigate to="/" replace />;
+  return children;
+}
 
 export function AppRouter() {
   return <RouterProvider router={router} />;
