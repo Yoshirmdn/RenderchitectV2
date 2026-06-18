@@ -59,7 +59,7 @@ function normalizeCategory(category) {
 }
 
 export default function Projects() {
-  const [search, setSearch] = useState("");
+  const [search,   setSearch]   = useState("");
   const [category, setCategory] = useState("all");
   const [sort, setSort] = useState("featured");
   const [view, setView] = useState("grid");
@@ -136,9 +136,9 @@ export default function Projects() {
 
   const inputStyle = {
     background: "var(--bg-card)",
-    color: "var(--text-primary)",
-    border: "1px solid var(--border)",
-    outline: "none",
+    color:      "var(--text-primary)",
+    border:     "1px solid var(--border)",
+    outline:    "none",
   };
 
   return (
@@ -153,34 +153,55 @@ export default function Projects() {
 
       <div className="max-w-7xl mx-auto px-6 mb-8">
         <div className="flex flex-col lg:flex-row gap-4">
+
+          {/* Search */}
           <div className="relative flex-1">
-            <FiSearch className="absolute left-3.5 top-1/2 -translate-y-1/2" size={15} style={{ color: "var(--text-muted)" }} />
+            <FiSearch className="absolute left-3.5 top-1/2 -translate-y-1/2"
+              size={15} style={{ color: "var(--text-muted)" }} />
             <input
               type="text"
               placeholder="Search designs, categories, software..."
               value={search}
-              onChange={e => setSearch(e.target.value)}
+              onChange={e => { setSearch(e.target.value); setPage(1); }}
               className="w-full pl-10 pr-4 py-3 rounded-xl text-sm transition-colors"
+              style={inputStyle}
               style={inputStyle}
             />
           </div>
+
+          {/* Sort */}
           <select
             value={sort}
-            onChange={e => setSort(e.target.value)}
+            onChange={e => { setSort(e.target.value); setPage(1); }}
             className="px-4 py-3 rounded-xl text-sm cursor-pointer min-w-[180px]"
             style={{ ...inputStyle, background: "var(--bg-card)" }}
           >
-            {sortOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+            <option value="newest">Newest</option>
           </select>
-          <div className="flex gap-1 rounded-xl p-1" style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}>
-            <button onClick={() => setView("grid")} className="p-2.5 rounded-lg transition-colors"
-              style={{ background: view === "grid" ? "rgba(200,169,110,0.15)" : "transparent", color: view === "grid" ? "var(--accent)" : "var(--text-muted)" }}>
-              <FiGrid size={16} />
-            </button>
-            <button onClick={() => setView("list")} className="p-2.5 rounded-lg transition-colors"
-              style={{ background: view === "list" ? "rgba(200,169,110,0.15)" : "transparent", color: view === "list" ? "var(--accent)" : "var(--text-muted)" }}>
-              <FiList size={16} />
-            </button>
+
+          {/* View toggle */}
+          <div className="flex gap-1 rounded-xl p-1"
+            style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}>
+            {[
+              { v: "grid", Icon: FiGrid },
+              { v: "list", Icon: FiList },
+            ].map(({ v, Icon }) => (
+              <button
+                key={v}
+                onClick={() => setView(v)}
+                className="p-2.5 rounded-lg transition-colors"
+                style={{
+                  background: view === v ? "rgba(200,169,110,0.15)" : "transparent",
+                  color:      view === v ? "var(--accent)" : "var(--text-muted)",
+                }}
+              >
+                <Icon size={16} />
+              </button>
+            ))}
           </div>
         </div>
 
@@ -188,7 +209,7 @@ export default function Projects() {
           {categories.map(cat => (
             <button
               key={cat.id}
-              onClick={() => setCategory(cat.id)}
+              onClick={() => { setCategory(cat.id); setPage(1); }}
               className="px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all font-mono"
               style={
                 category === cat.id
