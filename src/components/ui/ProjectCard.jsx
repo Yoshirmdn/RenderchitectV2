@@ -8,6 +8,8 @@ import { formatPrice } from "../../utils/format";
 export function ProjectCard({ project, index = 0 }) {
   const { addToCart, toggleWishlist, isWishlisted } = useStore();
   const wishlisted = isWishlisted(project.id);
+  const image = project.images?.[0] || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80";
+  const downloads = project.downloads ?? 0;
 
   return (
     <motion.div
@@ -21,7 +23,7 @@ export function ProjectCard({ project, index = 0 }) {
       {/* Image */}
       <div className="relative overflow-hidden h-52">
         <img
-          src={project.images[0]}
+          src={image}
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
@@ -83,7 +85,7 @@ export function ProjectCard({ project, index = 0 }) {
           </span>
           <span className="flex items-center gap-1">
             <FiDownload size={11} />
-            {project.downloads.toLocaleString()}
+            {downloads.toLocaleString()}
           </span>
           <span className="ml-auto">{project.fileSize}</span>
         </div>
