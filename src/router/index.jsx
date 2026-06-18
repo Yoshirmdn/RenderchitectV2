@@ -12,6 +12,7 @@ const Projects        = lazy(() => import("../pages/Projects"));
 const ProjectDetail   = lazy(() => import("../pages/ProjectDetail"));
 const Contact         = lazy(() => import("../pages/Contact"));
 const Cart            = lazy(() => import("../pages/Cart"));
+const Checkout      = lazy(() => import("../pages/Checkout"));
 const Wishlist        = lazy(() => import("../pages/Wishlist"));
 const Login           = lazy(() => import("../pages/Login"));
 const TrackOrder      = lazy(() => import("../pages/TrackOrder"));
@@ -66,6 +67,7 @@ const router = createBrowserRouter([
       { path: "projects/:slug", element: S(<ProjectDetail />) },
       { path: "contact",        element: S(<Contact />) },
       { path: "cart",           element: S(<Cart />) },
+      { path: "checkout",       element: S(<Checkout />) },
       { path: "wishlist",       element: S(<Wishlist />) },
       { path: "sell",           element: S(<SellOnArchvault />) },
       { path: "blog",           element: S(<Blog />) },
